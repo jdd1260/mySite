@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
+    _ = require('lodash');
 
     grunt.initConfig({
 	    sass: {		
@@ -15,6 +16,41 @@ module.exports = function(grunt) {
 			   	]					
 			}
 	    },
+	    template : {
+	    	dev: {
+	    		files: [
+					{
+						expand: true,
+						cwd: 'html',
+						src: '*.html',
+						dest: 'public/'
+					}
+				],	
+	    		options: {
+	    			data: function() {
+		    			var defaultVals = grunt.file.readJSON('templates/default.json');
+		    			var dev = grunt.file.readJSON('templates/dev.json');
+		    			return _.merge(defaultVals, dev);
+		    		}
+	    		}
+			},
+			dist: {
+				files: [
+					{
+						expand: true,
+						cwd: 'html',
+						src: '*.html',
+						dest: 'public/'
+					}
+				],	
+				options: {
+	    			data: function() {
+		    			var defaultVals = grunt.file.readJSON('templates/default.json');
+		    			var dist = grunt.file.readJSON('templates/dist.json');
+		    			return _.merge(defaultVals, dist);	    			}
+	    		}
+			}
+	    },
 	    watch: {
 			options: {
 		    	livereload: true,
@@ -24,8 +60,8 @@ module.exports = function(grunt) {
 			    tasks: ['sass'],
 			},
 			html: {
-			    files: ['html/*.html'],
-			    tasks: ['copy:html'],
+			    files: ['html/*.html', 'templates/*.json'],
+			    tasks: ['template:dev'],
 			},
 			js: {
 		     	    files: ['js/**/*.js'],
@@ -52,16 +88,6 @@ module.exports = function(grunt) {
             }
         },
 	    copy: {
-	    	html: {
-				files: [
-					{
-						expand: true,
-						cwd: 'html',
-						src: '*.html',
-						dest: 'public/'
-					}
-				]
-	    	},
 	    	js: {
 				files: [					
 					{
@@ -116,9 +142,9 @@ module.exports = function(grunt) {
 
     var buildTasks = ['clean:public', 'shell:bowerInstall', 'sass', 'copy'];
 
-    grunt.registerTask('default', buildTasks.concat(['connect:run', 'watch']));
+    grunt.registerTask('default', buildTasks.concat(['template:dev', 'connect:run', 'watch']));
 
-    var distTasks = buildTasks.concat(['useminPrepare', 'concat', 'cssmin', 'uglify', 'filerev', 'usemin', 'clean:distTemp']);
+    var distTasks = buildTasks.concat(['template:dist', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'filerev', 'usemin', 'clean:distTemp']);
 
     grunt.registerTask('dist', distTasks);
 
