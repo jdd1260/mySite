@@ -1,3 +1,16 @@
 {
-	"header": "Default Page Header"
+	"index": {
+		 "pageTitle": "Joel Detweiler",
+		 "menuTitle" : "Joel Detweiler",
+		 "navBar": [
+		 	   {
+				"name": "My Github",
+				"link": "https://github.com/jdd1260"
+			}	
+		 ],
+		 "jumbotron": {
+		 	      "title": "Welcome!",
+			      "body" : "This is the personal site of Joel Detweiler. I am building this site myself and including all source code in my GitHub page."
+		 }
+	}
 }
