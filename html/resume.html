@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <title><%- resume.pageTitle %></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- build:css styles/resume-style.css -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/resume.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/resume-vendor.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/resume-scripts.js -->
+    <!-- endbuild -->
+
+    <link rel="shortcut icon" "image/png" href="/assets/images/favicon.ico" type="image/x-icon" >
+</head>
+
+<body>
+  <div class="container">
+    <div class="row header">
+      <div class="col-sm-4 hidden-xs text-center">
+        <img src="<%- resume.headShot %>" alt="head shot" class="headshot"/>
+      </div>
+      <div class="col-sm-8">
+        <div class="name">
+          <%- resume.name %>
+        </div>
+        <div class="title">
+          <%- resume.title %>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="col-sm-6">
+          email: <a href="mailto:<%- resume.email %>"> <%- resume.email %> </a>
+        </div>
+        <div class="col-sm-6">
+          website: <a href="<%- resume.website %>"> <%- resume.website %> </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row body">
+      <div class="col-sm-4">
+        <div class="section">
+          <div class="sectionHeader">
+            About Me
+          </div>
+          <div class="sectionBody">
+            <%- resume.aboutMe %>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sectionHeader">
+            Skills
+          </div>
+          <div class="sectionBody">
+            <%- resume.aboutMe %>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="section">
+          <div class="sectionHeader">
+            Experience
+          </div>
+          <div class="sectionBody">
+            <%- resume.aboutMe %>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sectionHeader">
+            Education
+          </div>
+          <div class="sectionBody">
+            <%- resume.aboutMe %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,19 +1,31 @@
 {
 	"index": {
-		 "pageTitle": "Joel Detweiler",
-		 "menuTitle" : "Joel Detweiler",
-		 "navBar": [
-		 	   {
+		"pageTitle": "Joel Detweiler",
+		"menuTitle" : "Joel Detweiler",
+		"navBar": [
+			{
 				"name": "My Github",
 				"link": "https://github.com/jdd1260"
 			}, {
 				"name": "LinkedIn",
 				"link": "https://www.linkedin.com/in/joel-detweiler-0095912b"
+			}, {
+				"name": "Résumé",
+				"link": "/resume.html"
 			}	
-		 ],
-		 "jumbotron": {
-		 	      "title": "Welcome!",
-			      "body" : "This is the personal site of Joel Detweiler. I am building this site myself and including all source code in my GitHub page."
-		 }
+		],
+		"jumbotron": {
+			"title": "Welcome!",
+			"body" : "This is the personal site of Joel Detweiler. I am building this site myself and including all source code in my GitHub page."
+		}
+	},
+	"resume": {
+		"pageTitle": "Joel Detweiler",
+		"headShot": "/assets/images/headshot.jpeg",
+		"name": "Joel Detweiler",
+		"title": "Full Stack Developer",
+		"email": "joel_detweiler@gmail.com",
+		"website": "http://jdd1260.github.io",
+		"aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	}
 }
