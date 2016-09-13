@@ -15,7 +15,20 @@ module.exports = function(grunt) {
 				    }
 			   	]					
 			}
-	    },
+	    }, 
+	    autoprefixer: {
+            options: {
+                browsers: ['last 3 versions']
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'public/css/',
+                    src: '{,*/}*.css',
+                    dest: 'public/css/'
+                }]
+            }
+        },
 	    template : {
 	    	dev: {
 	    		files: [
@@ -57,7 +70,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 			    files: ['css/**/*.scss'],
-			    tasks: ['sass'],
+			    tasks: ['sass', 'autoprefixer'],
 			},
 			html: {
 			    files: ['html/*.html', 'templates/*.json'],
@@ -140,7 +153,7 @@ module.exports = function(grunt) {
 	    }
 	});
 
-    var buildTasks = ['clean:public', 'shell:bowerInstall', 'sass', 'copy'];
+    var buildTasks = ['clean:public', 'shell:bowerInstall', 'sass', 'autoprefixer', 'copy'];
 
     grunt.registerTask('default', buildTasks.concat(['template:dev', 'connect:run', 'watch']));
 
