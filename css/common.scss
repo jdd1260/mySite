@@ -12,3 +12,11 @@ body {
     }
 }
 
+@media print {
+	.hideOnPrint {
+		display: none;
+	}
+	a:link:after, a:visited:after {
+	    content: "";
+	}
+}	
