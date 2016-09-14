@@ -4,7 +4,7 @@
 		"menuTitle" : "Joel Detweiler",
 		"navBar": [
 			{
-				"name": "My Github",
+				"name": "Github",
 				"link": "https://github.com/jdd1260"
 			}, {
 				"name": "LinkedIn",
@@ -16,7 +16,7 @@
 		],
 		"jumbotron": {
 			"title": "Welcome!",
-			"body" : "This is the personal site of Joel Detweiler. I am building this site myself and including all source code in my GitHub page."
+			"body" : "<p> This is the personal site of Joel Detweiler. This is a site to find information about me, view the projects I work on, and find blog posts that I've written. </p> <p> I am building this site myself and including all source code in my GitHub page. All content is generated using straightforward templates, so this site could be easily forked and re-used. </p>"
 		}
 	},
 	"resume": {

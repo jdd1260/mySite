@@ -34,24 +34,24 @@
           <span class="icon-bar"></span>
         </button>
         <div class="navbar-brand">
-	  <%- index.menuTitle %>
-	</div>
+         <%- index.menuTitle %>
+        </div>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-	  <% _.forEach(index.navBar, function(item) { %>
-	  <li><a href="<%= item.link %>"> <%- item.name %> </a> </li>
-	  <% }); %>
+          <% _.forEach(index.navBar, function(item) { %>
+	       <li><a href="<%= item.link %>"> <%- item.name %> </a> </li>
+	       <% }); %>
         </ul>
       </div>
     </div>
   </nav>
   <div class="container">
-      <div class="jumbotron">
-        <h1><%- index.jumbotron.title %></h1>
-        <p> <%- index.jumbotron.body %> </p>
-      </div>
+    <div class="jumbotron">
+      <h1><%- index.jumbotron.title %></h1>
+      <p> <%= index.jumbotron.body %> </p>
     </div>
+  </div>
 </body>
 
 </html>
