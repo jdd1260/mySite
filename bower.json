@@ -1,7 +1,0 @@
-{
-  "name": "staticProject",
-  "dependencies": {
-    "jquery": "^2.2.3",
-    "bootstrap-sass": "^3.3.6"
-  }
-}
