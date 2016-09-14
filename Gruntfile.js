@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 			    tasks: ['copy:js'],
 			},
 			assets: {
-		            files: ['assets/**/*'],
+	            files: ['assets/**/*'],
 			    tasks: ['copy:assets'],
 			}
 	    },
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'assets',
 						src: '**/*',
-						dest: 'public/assets/'
+						dest: 'public/'
 					}
 				]
 	    	}
