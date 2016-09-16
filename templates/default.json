@@ -2,6 +2,7 @@
 	"index": {
 		"pageTitle": "Joel Detweiler",
 		"menuTitle" : "Joel Detweiler",
+		"menuTitleLink": "/",
 		"navBar": [
 			{
 				"name": "Github",

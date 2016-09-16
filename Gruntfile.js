@@ -1,6 +1,18 @@
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
     _ = require('lodash');
+    fs = require('fs');
+
+    function getFileMapping(dir) {
+    	var dirFiles = fs.readdirSync(dir);
+    	var fileMap = {};
+    	_.forEach(dirFiles, 
+    		function(fileName) {
+    			fileMap[fileName.replace('.html','')] = fs.readFileSync(dir + '/' + fileName);
+    		}
+		);
+		return fileMap;
+    }
 
     grunt.initConfig({
 	    sass: {		
@@ -43,7 +55,8 @@ module.exports = function(grunt) {
 	    			data: function() {
 		    			var defaultVals = grunt.file.readJSON('templates/default.json');
 		    			var dev = grunt.file.readJSON('templates/dev.json');
-		    			return _.merge(defaultVals, dev);
+		    			var partials = {partials: getFileMapping('partials')};
+		    			return _.merge(defaultVals, dev, partials);
 		    		}
 	    		}
 			},
@@ -60,7 +73,9 @@ module.exports = function(grunt) {
 	    			data: function() {
 		    			var defaultVals = grunt.file.readJSON('templates/default.json');
 		    			var dist = grunt.file.readJSON('templates/dist.json');
-		    			return _.merge(defaultVals, dist);	    			}
+		    			var partials = {partials: getFileMapping('partials')};
+		    			return _.merge(defaultVals, dist, partials);	    			
+		    		}
 	    		}
 			}
 	    },
@@ -73,11 +88,11 @@ module.exports = function(grunt) {
 			    tasks: ['sass', 'autoprefixer'],
 			},
 			html: {
-			    files: ['html/*.html', 'templates/*.json'],
+			    files: ['html/*.html', 'templates/*.json', 'partials/*'],
 			    tasks: ['template:dev'],
 			},
 			js: {
-		     	    files: ['js/**/*.js'],
+	     	    files: ['js/**/*.js'],
 			    tasks: ['copy:js'],
 			},
 			assets: {
