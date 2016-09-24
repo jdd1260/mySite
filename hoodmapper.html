@@ -1,0 +1,113 @@
+<!doctype html>
+<!doctype html>
+<html>
+
+<head>
+    <title>Hood Mapper</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/hoodmapper-style.3bd78f2b.css">
+
+    <script src="scripts/hoodmapper-vendor.ad084a3b.js"></script>
+    <script src="scripts/hoodmapper-scripts.1128a337.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" >
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        Joel Detweiler
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+       <li><a href="https://github.com/jdd1260"> Github </a> </li>
+       
+       <li><a href="https://www.linkedin.com/in/joel-detweiler-0095912b"> LinkedIn </a> </li>
+       
+       <li><a href="/resume.html"> Résumé </a> </li>
+       
+       <li><a href="/hoodmapper.html"> Hood Mapper </a> </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container-fluid" ng-app="HoodMapper" ng-controller="MainCtrl">
+    <div class="row text-center">
+      <h2> HoodMapper </h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <leaflet class="map" center="data.center" event-broadcast="data.events" markers="data.markers"></leaflet>
+      </div>
+      <div class="col-sm-4">
+        <div ng-if="!editingId && isEmpty(data.locations)">
+          <h3> Welcome to HoodMapper!  </h3>
+          <p>
+           HoodMapper allows you to click on a spot on the map and drop a marker. You can title that location, provide a URL for reference, and give a description. You can view your list of locations, clicking on the title to bring that marker into focus. After saving you can bookmark or copy the URL and open again later to bring open the same map and markers. Share that URL with friends to show them your favorite spots!
+          </p>
+        </div>
+        <div ng-if="!(!editingId && isEmpty(data.locations))">
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="btn btn-success" ng-click="reset()"> Reset Page</button>  <br>     
+            </div>
+            <div class="col-sm-8">
+              <a ng-href="{{url}}" ng-if="url" target="_blank">Open In Another Tab!</a>
+            </div>
+          </div>
+          <div class="locations col-sm-12">
+            <h3 ng-if="editingId">Edit Location</h3>
+            <h3 ng-if="!editingId">Locations</h3>
+            <form class="form-horizontal" ng-repeat="(id, location) in data.locations" ng-if="!editingId || editingId == id">
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="name">Name:</label>
+                <div class="col-sm-9">
+                  <label class="control-label" ng-if="!editingId"> <a href="" ng-click="data.markers[id].focus=true;data.noEdit=true">{{location.name}} </a></label>
+                  <input ng-if="editingId" type="text" class="form-control" id="name" ng-model="location.name" placeholder="name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="url">URL:</label>
+                <div class="col-sm-9">
+                  <label class="control-label" ng-if="!editingId"><a target="_blank" ng-href="{{location.url}}"> {{location.url}} </a> </label>
+                  <input ng-if="editingId" type="text" class="form-control" id="url" placeholder="http://" ng-model="location.url">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="description">Description:</label>
+                <div class="col-sm-9">
+                  <label class="control-label" ng-if="!editingId"> {{location.description}} </label>
+                  <input ng-if="editingId" type="text" class="form-control" id="description" ng-model="location.description" placeholder="description">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button  ng-if="editingId" class="btn btn-success" ng-click="save()">Save</button>
+                  <button  ng-if="!editingId" class="btn btn-primary" ng-click="edit(id)">Edit</button>
+                  <button class="btn btn-danger" ng-click="delete(id);save()">Delete</button>
+                </div>
+              </div>
+              <hr>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
