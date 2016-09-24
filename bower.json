@@ -2,6 +2,10 @@
   "name": "staticProject",
   "dependencies": {
     "jquery": "^2.2.3",
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap-sass": "^3.3.6",
+    "angular": "^1.5.8",
+    "leaflet": "^0.7.7",
+    "angular-leaflet-directive": "^0.10.0",
+    "lodash": "^4.16.1"
   }
 }

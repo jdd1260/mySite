@@ -13,7 +13,10 @@
 			}, {
 				"name": "Résumé",
 				"link": "/resume.html"
-			}	
+			}, {
+				"name": "Hood Mapper",
+				"link": "/hoodmapper.html"
+			}		
 		],
 		"jumbotron": {
 			"title": "Welcome!",
