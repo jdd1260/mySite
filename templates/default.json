@@ -5,7 +5,7 @@
 		"menuTitleLink": "/",
 		"navBar": [
 			{
-				"name": "Github",
+				"name": "GitHub",
 				"link": "https://github.com/jdd1260"
 			}, {
 				"name": "LinkedIn",
@@ -13,6 +13,9 @@
 			}, {
 				"name": "Résumé",
 				"link": "/resume.html"
+			}, {
+				"name": "Tech Blog",
+				"link": "/techblog.html"
 			}, {
 				"name": "Hood Mapper",
 				"link": "/hoodmapper.html"
@@ -91,6 +94,17 @@
 					"Minor: Mathematics",
 					"Thesis: <i> Updatable Learning of Support Vector Machines </i>"
 				]
+			}
+		]
+	},
+	"techBlog": {
+		"pageTitle": "Joel's Tech Blog",
+		"entries": [
+			{
+				"title": "Setting up my own web site",
+				"date": "11/12/2016",
+				"summary": "I set up my own site. Here's how I did it.",
+				"body": "setting-up" 
 			}
 		]
 	}
