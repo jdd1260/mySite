@@ -69,6 +69,5 @@
   },
   "_source": "https://github.com/tombatossals/angular-leaflet-directive.git",
   "_target": "^0.10.0",
-  "_originalSource": "angular-leaflet-directive",
-  "_direct": true
+  "_originalSource": "angular-leaflet-directive"
 }

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Joel&#x27;s Tech Blog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/tech-blog-style.c4b931c0.css">
+
+    <script src="scripts/tech-blog-vendor.d1f52a7a.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" >
+</head>
+
+<body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-87288968-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        Joel Detweiler
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+       <li><a href="https://github.com/jdd1260"> GitHub </a> </li>
+       
+       <li><a href="https://www.linkedin.com/in/joel-detweiler-0095912b"> LinkedIn </a> </li>
+       
+       <li><a href="/resume.html"> Résumé </a> </li>
+       
+       <li><a href="/techblog.html"> Tech Blog </a> </li>
+       
+       <li><a href="/hoodmapper.html"> Hood Mapper </a> </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    
+    <div class="row margin-top-20">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 entry">
+        <div class="row">
+          <div class="col-xs-8">
+            <h3> Setting up my own web site </h3>
+          </div>
+          <div class="col-xs-4 text-right">
+            <h3> 11/12/2016 </h3>
+          </div>
+        </div>
+        <div class="body">
+          <div class="settingUpBlog">
+<p> 
+	Recently I set out to create a space for people to find out who I am and to see projects that I'm working on. Now that I've finished setting up the site I wanted to document the concerns I had, the decisions I made, and how it all worked out. 
+</p>
+<p class="font-20"> Concerns and Solutions </p>
+<p>
+	<ol>
+		<li> 
+			<div class="header"> Cost </div>
+			<div class="body">
+				I didn't want to be spending money to do this. I'm not sure many people will ever actually see this site, so I couldn't really justify the cost of hosting a site (even though this cost is not really that large). Luckily, GitHub has a really cool <a href="https://pages.github.com/">Pages</a> feature to allow anyone to host a site for their profile or repository - for free. The only downside is that you have to store your code in a public repository on GitHub for anyone to see. Luckily, that fit perfectly into my plan (see below).
+			</div>
+		</li>
+		<li> 
+			<div class=" header"> Easily Resusable and Editable </div>
+			<div class="body">
+				I wanted to make my site easy for people to reuse and customize. GitHub supports forking of <a href="https://github.com/jdd1260/jdd1260.github.io/tree/develop">my repository</a>, allowing others to easily get started with their own site quickly. In order to better facilitate the goal of making it truly easy for others to customize their own site, I have tried to separate the content from the code of the site. This allows a user to edit, remove, or add content without ever touching HTML. The content is stored in easy to follow JSON (see <a href="https://github.com/jdd1260/jdd1260.github.io/blob/develop/templates/default.json">here</a>) that can be changed and personalized. Let's look at an example from the default.json file:
+				<pre>
+"navBar": [
+	{
+		"name": "GitHub",
+		"link": "https://github.com/jdd1260"
+	}, {
+		"name": "LinkedIn",
+		"link": "https://www.linkedin.com/in/joel-detweiler-0095912b"
+	}, {
+		"name": "Résumé",
+		"link": "/resume.html"
+	}, {
+		"name": "Tech Blog",
+		"link": "/techblog.html"
+	}, {
+		"name": "Hood Mapper",
+		"link": "/hoodmapper.html"
+	}		
+]</pre>	
+				This JSON is defining the content for the navbar on the top of the site; each item in the list corresponds to a link in the navbar. A user need only provide a name and a URL to see that link appear on the page. Additionally, the page supports as many or as few links as you want to provide. As you can see, these links could be to a page on the same site (like resume.html) or to an external site (like LinkedIn). This structure repeats itself across the site so that a user can create their own resume, welcome note, etc. However, if a user would like to customize the site design or add new types of content they will have to do that themselves, which requires a knowledge of HTML and CSS. But I figure that most people who will be forking projects in GitHub can at least do some coding if they so choose. 
+			</div>	
+		</li>
+		<li>
+			<div class="header"> Static Site for SEO </div>
+			<div class="body">
+				<p>
+				In making this site I'd obviously like people to see some of what I put here. But it's really hard for people to find this site if it doesn't show up in search engine results. <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a> (SEO) is the name for work that is done to make sure your site is easily found and prominently displayed in search results. You can spend a lot of time and money to make sure that your site excels at SEO, but my main concern is just that my site can be found at all with a search engine. 
+				</p>
+				<p>
+				Since search engines work by crawling the web and reading the HTML files that they find I need to make sure that all the content I want to be indexed by search engines is readily available in HTML files. Now, most of my work experience is in building dynamic websites (especially Single Page Applications) where a lot of the content is generated using javascript. While this can be a great strategy for making highly interactive and data supported websites, it is not great for SEO. So I wanted to make sure that the output of all my work was straightforward HTML and CSS, with javascript having no impact on the actual content of the page. In this way anything I make could be found with a search engine. 
+				</p>
+				<p>
+				Since it I didn't want to be directly working on pure HTML (see concern 2) and I like having additional development tools available to me, I didn't want to be limited to working on HTML and CSS directly. So I needed a development environment that could spit out pure HTML and CSS for the benefit of SEO while also giving me all the power I needed. That is where <a href="http://gruntjs.com/">Grunt</a> comes in. Grunt is a task runner that you can use to perform different jobs and transform your code from how you want to work on it to how you want it to be in its final state. For me, that meant converting HTML templates and JSON content into finalized HMTL, using <a href="http://sass-lang.com/">SASS</a>  instead of pure CSS, and using minification to ensure that my site would download as fast as possible. Grunt allowed me to do all of that quickly and easily, reusing the work that others have made available. To see  the details of how it works check out my <a href="https://github.com/jdd1260/jdd1260.github.io/blob/develop/Gruntfile.js">Gruntfile</a>. 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="header"> Mobile Friendly </div>
+			<div class="body">
+				Everything needs to be mobile friendly nowadays - my site needs to look as good on mobile as desktop. My favorite tool for this is responsive web design with <a href="http://getbootstrap.com/">Bootstrap</a>. Bootstrap, along with media queries in CSS (using <a href="http://sass-lang.com/">SASS</a>), allows your single HTML structure to adapt based on the browser window size. No need for a mobile site or duplicated HTML - just let your page adjust based on the space it has. My best work of this kind was on  <a href="http://motionmathgames.com/">my company's home page</a> (which also uses this same project structure).
+			</div>
+		</li>
+	</ol>
+</p>
+<div class="margin-top-20">
+	I'm still figuring out what I want this website to be, how it should look (I'm aware that it could be prettier), and how to market it. However, with how well my current site structure fits my broader technical requirements, I'm pretty confident that it can easily adapt to my needs.
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+
+</html>
