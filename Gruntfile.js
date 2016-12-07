@@ -106,7 +106,8 @@ module.exports = function(grunt) {
 	    			hostname: '0.0.0.0',
 	    			base: 'public',
 	    			livereload: true,
-	    			open: true
+	    			open: true,
+	    			port: 8080
 	    		}
 	    	}
 	    },
