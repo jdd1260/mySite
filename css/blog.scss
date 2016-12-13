@@ -3,12 +3,14 @@ div.entry {
 	border-radius: 5px;
 	border: 1px solid #9d9d9d;
 	padding: 0px 15px 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
 	.body {
 		margin-top: 10px;
 	}
 }
 
-div.settingUpBlog {
+div.blogPost {
 	ol {
 		font-size: 15px;
 		li {
@@ -19,13 +21,21 @@ div.settingUpBlog {
 			.body {
 				font-size: 14px;
 				margin-top: 10px;
-				pre {
-					width: 90%;
-					font-size: 12px;
-					margin: 10px auto;
-				}
 			}
 		}
 	}
+}
 
+div#settingUpBlog {
+	pre {
+		width: 90%;
+		font-size: 12px;
+		margin: 10px auto;
+	}
+		
+}
+
+div#hoodMapperBlog {
+	
+	
 }

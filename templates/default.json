@@ -17,7 +17,7 @@
 				"name": "Tech Blog",
 				"link": "/techblog.html"
 			}, {
-				"name": "Hood Mapper",
+				"name": "HoodMapper",
 				"link": "/hoodmapper.html"
 			}		
 		],
@@ -100,6 +100,12 @@
 	"techBlog": {
 		"pageTitle": "Joel's Tech Blog",
 		"entries": [
+			{
+				"title": "HoodMapper - My Own Hackathon",
+				"date": "12/12/2016",
+				"summary": "What can one night of work create?",
+				"body": "hoodmapper" 
+			},
 			{
 				"title": "Setting up my own web site",
 				"date": "11/12/2016",
