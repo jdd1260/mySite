@@ -14,8 +14,8 @@
 				"name": "Résumé",
 				"link": "/resume.html"
 			}, {
-				"name": "Tech Blog",
-				"link": "/techblog.html"
+				"name": "Blog",
+				"link": "https://medium.com/programming-with-a-purpose"
 			}, {
 				"name": "HoodMapper",
 				"link": "/hoodmapper.html"
@@ -23,7 +23,7 @@
 		],
 		"jumbotron": {
 			"title": "Welcome!",
-			"body" : "<p> This is the personal site of Joel Detweiler. This is a site to find information about me, view the projects I work on, and find blog posts that I've written. </p> <p> I am building this site myself and including all source code in my GitHub page. All content is generated using straightforward templates, so this site could be easily forked and re-used. </p>"
+			"body" : "<p> This is the personal site of Joel Detweiler. I'm a full-stack software engineer working as a contractor. This is a site to find information about me, view the projects I work on, and find blog posts that I've written. If you like what you see and want to work on a project together, reach out to me and let's talk.</p> <p> I am building this site myself and including all source code in my GitHub page. All content is generated using straightforward templates, so this site could be easily forked and re-used. </p>"
 		}
 	},
 	"resume": {
@@ -48,9 +48,19 @@
 		],
 		"experience": [
 			{
+				"company": "LaneAxis",
+				"location": "San Francisco, CA",
+				"dates": "January 2017 - Present",
+				"title": "Contract Software Developer",
+				"items": [
+					"Ownership over all frontend development of company site using AngularJS and AWS.",
+					"Preparing site for initial release of MVP."
+				]
+			},
+			{
 				"company": "Motion Math",
 				"location": "San Francisco, CA",
-				"dates": "February 2015 - Present",
+				"dates": "February 2015 - December 2016",
 				"title": "Full-Stack Developer",
 				"items": [
 					"Ownership over all frontend development of company site using AngularJS and AWS.",
@@ -94,23 +104,6 @@
 					"Minor: Mathematics",
 					"Thesis: <i> Updatable Learning of Support Vector Machines </i>"
 				]
-			}
-		]
-	},
-	"techBlog": {
-		"pageTitle": "Joel's Tech Blog",
-		"entries": [
-			{
-				"title": "HoodMapper - My Own Hackathon",
-				"date": "12/12/2016",
-				"summary": "What can one night of work create?",
-				"body": "hoodmapper" 
-			},
-			{
-				"title": "Setting up my own web site",
-				"date": "11/12/2016",
-				"summary": "I set up my own site. Here's how I did it.",
-				"body": "setting-up" 
 			}
 		]
 	}
