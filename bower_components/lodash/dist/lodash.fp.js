@@ -145,24 +145,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	/**
-	 * A specialized version of `_.spread` which flattens the spread array into
-	 * the arguments of the invoked `func`.
+	 * This function is like `_.spread` except that it includes arguments after those spread.
 	 *
 	 * @private
 	 * @param {Function} func The function to spread arguments over.
 	 * @param {number} start The start position of the spread.
 	 * @returns {Function} Returns the new function.
 	 */
-	function flatSpread(func, start) {
+	function spread(func, start) {
 	  return function() {
 	    var length = arguments.length,
-	        lastIndex = length - 1,
 	        args = Array(length);
 
 	    while (length--) {
 	      args[length] = arguments[length];
 	    }
 	    var array = args[start],
+	        lastIndex = args.length - 1,
 	        otherArgs = args.slice(0, start);
 
 	    if (array) {
@@ -394,7 +393,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var data = mapping.methodSpread[name],
 	          start = data && data.start;
 
-	      return start  === undefined ? ary(func, n) : flatSpread(func, start);
+	      return start  === undefined ? ary(func, n) : spread(func, start);
 	    }
 	    return func;
 	  }
@@ -564,8 +563,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    each(aryMethodKeys, function(aryKey) {
 	      each(mapping.aryMethod[aryKey], function(otherName) {
 	        if (realName == otherName) {
-	          var data = mapping.methodSpread[realName],
-	              afterRearg = data && data.afterRearg;
+	          var spreadData = mapping.methodSpread[realName],
+	              afterRearg = spreadData && spreadData.afterRearg;
 
 	          result = afterRearg
 	            ? castFixed(realName, castRearg(realName, wrapped, aryKey), aryKey)
@@ -821,8 +820,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** Used to map method names to iteratee rearg configs. */
 	exports.iterateeRearg = {
-	  'mapKeys': [1],
-	  'reduceRight': [1, 0]
+	  'mapKeys': [1]
 	};
 
 	/** Used to map method names to rearg configs. */
