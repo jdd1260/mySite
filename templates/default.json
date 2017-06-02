@@ -82,16 +82,6 @@
 					"Developed rich client-side UIs using Javascript, jQuery, and AngularJS.",
 					"Integrated all work with the Salesforce data platform."
 				]
-			},
-			{
-				"company": "Lawrence Livermore National Laboratory",
-				"location": "Livermore, CA",
-				"dates": "May 2010 - August 2010",
-				"title": "Student Intern",
-				"items": [
-					"Performed original Machine Learning research with applications to computersecurity.",
-					"Used Markov Chains and Hidden Markov Models to detect anomalies in networkconnection data."
-				]
 			}
 		],
 		"education": [
