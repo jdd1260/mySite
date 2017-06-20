@@ -31,9 +31,10 @@
 		"headShot": "/images/headshot.jpeg",
 		"name": "Joel Detweiler",
 		"title": "Full Stack Developer",
+		"location": "Pittsburgh, PA",
 		"email": "joeldetweiler@gmail.com",
 		"website": "http://jdd1260.github.io",
-		"aboutMe": "Full-stack engineer with 5 years experience working on new and growing products. I love building new things, trying new languages/frameworks, and assembling existing tools to create something great. I'm an efficient and flexibile team player used to wearing many hats and taking on a variety of responsibilities. I think the power of technology lies in its potential to help people.",
+		"aboutMe": "Full-stack engineer with 5 years experience working on new and growing products. I love new projects, languages, and frameworks. Skilled at ssembling existing tools to create something great. I'm an efficient and flexibile engineer used to wearing many hats. I think the power of technology lies in its potential to help people.",
 		"skills": [
 			"AngularJS",
 			"Scala",
@@ -49,11 +50,12 @@
 		"experience": [
 			{
 				"company": "LaneAxis",
-				"location": "San Francisco, CA",
+				"location": "Remote",
 				"dates": "January 2017 - Present",
 				"title": "Contract Software Developer",
 				"items": [
-					"Ownership over all frontend development of company site using AngularJS and AWS.",
+					"Only frontend developer, working with AngularJS.",
+					"Focused on making code DRY, reusable, and easily extendable.",
 					"Preparing site for initial release of MVP."
 				]
 			},

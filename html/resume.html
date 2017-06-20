@@ -27,12 +27,12 @@
   <div class="container-fluid">
   <div>
     <div class="row header margin-top-20">
-      <div class="col-xs-8 col-sm-6 col-md-4">
+      <div class="col-xs-8 col-sm-6">
         <div class="name">
           <%- resume.name %>
         </div>
         <div class="title">
-          <%- resume.title %>
+          <%- resume.title %> - <%- resume.location %>
         </div>
         <div>
           email: <a href="mailto:<%- resume.email %>"> <%- resume.email %> </a>
@@ -41,7 +41,7 @@
           website: <a href="<%- resume.website %>"> <%- resume.website %> </a>
         </div>
       </div>
-      <div class="col-xs-4 col-sm-6 col-md-8 hideOnPrint">
+      <div class="col-xs-4 col-sm-6 hideOnPrint">
         <img src="<%- resume.headShot %>" alt="head shot" class="headshot"/>
       </div>
     </div>  
