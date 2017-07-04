@@ -19,7 +19,11 @@
 			}, {
 				"name": "HoodMapper",
 				"link": "/hoodmapper.html"
-			}		
+			},
+			{
+				"name": "Undergraduate Thesis",
+				"link": "/files/Updatable_Learning_of_SVMs.pdf"
+			}
 		],
 		"jumbotron": {
 			"title": "Welcome!",
