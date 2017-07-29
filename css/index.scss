@@ -1,3 +1,16 @@
+@import 'css/_variables';
+
 body {
     padding-top: 70px;
+    background-color: $theme-light;
+}
+
+.jumbotron {
+    color: $theme-dark;
+    font-size: 18px;
+}
+
+.jumbotron-sm {
+    font-size: .7em;
+    font-size: 14px;
 }

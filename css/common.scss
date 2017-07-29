@@ -1,5 +1,6 @@
 @import "public/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 $icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+@import 'css/_variables';
 @import 'public/bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'css/_fonts';
 @import 'css/_helpers';
@@ -24,4 +25,13 @@ body {
 
 button {
 	outline: none !important;	
+}
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }

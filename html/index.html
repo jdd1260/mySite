@@ -26,9 +26,21 @@
 <body>
   <%= partials.navbar %>
   <div class="container">
-    <div class="jumbotron">
-      <h1><%- index.jumbotron.title %></h1>
-      <p> <%= index.jumbotron.body %> </p>
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="jumbotron">
+          <h1><%- index.jumbotron.title %></h1>
+          <p> <%- index.jumbotron.body %> </p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <% _.forEach(index.sideBarItems, function(sideBarItem) { %>
+        <div class="jumbotron jumbotron-sm <%- sideBarItem.class %>">
+          <h1><%- sideBarItem.title %></h1>
+          <p> <%= sideBarItem.body %> </p>
+        </div>
+        <% }); %>
+      </div>
     </div>
   </div>
 </body>

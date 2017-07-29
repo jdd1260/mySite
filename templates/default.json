@@ -9,7 +9,7 @@
 				"link": "https://github.com/jdd1260"
 			}, {
 				"name": "LinkedIn",
-				"link": "https://www.linkedin.com/in/joel-detweiler-0095912b"
+				"link": "https://www.linkedin.com/in/joel-d-0095912b/"
 			}, {
 				"name": "Résumé",
 				"link": "/resume.html"
@@ -27,8 +27,20 @@
 		],
 		"jumbotron": {
 			"title": "Welcome!",
-			"body" : "<p> This is the personal site of Joel Detweiler. I'm a full-stack software engineer working as a contractor. This is a site to find information about me, view the projects I work on, and find blog posts that I've written. If you like what you see and want to work on a project together, reach out to me and let's talk.</p> <p> I am building this site myself and including all source code in my GitHub page. All content is generated using straightforward templates, so this site could be easily forked and re-used. </p>"
-		}
+			"body" : "This is the personal site of Joel Detweiler. I'm a full-stack software engineer currently looking for new, remote opportunities. This is a site to find information about me and some of the things I'm working on. If you like what you see and want to work together, reach out to me and let's talk."
+		},
+		"sideBarItems": [
+			{
+				"title": "About This Site",
+				"body": "I am building this site myself and including all source code in my GitHub page. All content is generated using straightforward templates, so this site could be easily forked and re-used. You can read about how I did it <a href='https://medium.com/programming-with-a-purpose/setting-up-my-own-web-site-49d2dd5b04b9'> on my blog </a>.",
+				"class": ""
+			},
+			{
+				"title": "I'm Mobile Friendly!",
+				"body": "Check me out as if you were on a smartphone <a href='/mobile.html'>here</a>.",
+				"class": "hidden-xs"
+			}
+		]
 	},
 	"resume": {
 		"pageTitle": "Joel Detweiler",
@@ -38,7 +50,7 @@
 		"location": "Pittsburgh, PA",
 		"email": "joeldetweiler@gmail.com",
 		"website": "http://jdd1260.github.io",
-		"aboutMe": "Full-stack engineer with 5 years experience working on new and growing products. I love new projects, languages, and frameworks. Skilled at ssembling existing tools to create something great. I'm an efficient and flexibile engineer used to wearing many hats. I think the power of technology lies in its potential to help people.",
+		"aboutMe": "Full-stack engineer with 5 years experience working on new and growing products. I love new projects, languages, and frameworks. Skilled at assembling existing tools to create something great. I'm an efficient and flexibile engineer used to wearing many hats. I think the power of technology lies in its potential to help people.",
 		"skills": [
 			"AngularJS",
 			"Scala",
