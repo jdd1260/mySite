@@ -67,12 +67,12 @@
 			{
 				"company": "LaneAxis",
 				"location": "Remote",
-				"dates": "January 2017 - Present",
+				"dates": "January 2017 - June 2017",
 				"title": "Contract Software Developer",
 				"items": [
 					"Only frontend developer, working with AngularJS.",
 					"Focused on making code DRY, reusable, and easily extendable.",
-					"Preparing site for initial release of MVP."
+					"Prepared site for initial release of MVP."
 				]
 			},
 			{
@@ -99,6 +99,16 @@
 					"Wrote server-side code and RESTful APIs in Java.",
 					"Developed rich client-side UIs using Javascript, jQuery, and AngularJS.",
 					"Integrated all work with the Salesforce data platform."
+				]
+			},
+			{
+				"company": "Lawrence Livermore National Laboratory",
+				"location": "Livermore, CA",
+				"dates": "May 2010 - August 2010",
+				"title": "Student Intern",
+				"items": [
+					"Performed original Machine Learning research with applications to computer security.",
+					"Used Markov Chains and Hidden Markov Models to detect anomalies in network connection data."
 				]
 			}
 		],
