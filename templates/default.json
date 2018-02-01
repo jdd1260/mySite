@@ -27,7 +27,7 @@
 		],
 		"jumbotron": {
 			"title": "Welcome!",
-			"body" : "This is the personal site of Joel Detweiler. I'm a full-stack software engineer currently looking for new, remote opportunities. This is a site to find information about me and some of the things I'm working on. If you like what you see and want to work together, reach out to me and let's talk."
+			"body" : "This is the personal site of Joel Detweiler. I'm a full-stack software engineer working as a Senior JavaScript Developer at iFit. This is a site to find information about me and some of the things I'm working on. If you like what you see and want to work together, reach out to me and let's talk."
 		},
 		"sideBarItems": [
 			{
@@ -50,29 +50,30 @@
 		"location": "Pittsburgh, PA",
 		"email": "joeldetweiler@gmail.com",
 		"website": "http://jdd1260.github.io",
-		"aboutMe": "Full-stack engineer with 5 years experience working on new and growing products. I love new projects, languages, and frameworks. Skilled at assembling existing tools to create something great. I'm an efficient and flexibile engineer used to wearing many hats. I think the power of technology lies in its potential to help people.",
+		"aboutMe": "I'm a full-stack engineer with a passion for working on new and growing products - I love starting new projects, learning new languages, and finding the best framework for the project. I'm skilled at assembling existing tools to create something great with minimal overhead. I work efficiently and flexibily, and I'm used to wearing many hats.",
 		"skills": [
-			"AngularJS",
+			"JavaScript",
 			"Scala",
 			"Java",
-			"MongoDB",
 			"Python",
 			"Node.js",
 			"REST APIs",
+			"AngularJS",
+			"React",
+			"MongoDB",
 			"Bootstrap",
-			"SASS",
+			"Sass",
 			"Grunt"
 		],
 		"experience": [
 			{
-				"company": "LaneAxis",
+				"company": "iFit",
 				"location": "Remote",
-				"dates": "January 2017 - June 2017",
-				"title": "Contract Software Developer",
+				"dates": "September 2017 - Present",
+				"title": "Senior JavaScript Developer",
 				"items": [
-					"Only frontend developer, working with AngularJS.",
-					"Focused on making code DRY, reusable, and easily extendable.",
-					"Prepared site for initial release of MVP."
+					"Used React and Redux to build ",
+					"Developed microservices for AWS Lambda"
 				]
 			},
 			{
@@ -81,7 +82,7 @@
 				"dates": "February 2015 - December 2016",
 				"title": "Full-Stack Developer",
 				"items": [
-					"Ownership over all frontend development of company site using AngularJS and AWS.",
+					"Ownership over all front end development of company site using AngularJS and AWS.",
 					"Developed REST APIs using Scala.",
 					"Database work using MongoDB and PostgreSQL.",
 					"Managed collection and display of key company analytics.",
@@ -96,8 +97,8 @@
 				"title": "Associate Software Engineer",
 				"items": [
 					"First developer on a team working on new products for life science companies.",
-					"Wrote server-side code and RESTful APIs in Java.",
-					"Developed rich client-side UIs using Javascript, jQuery, and AngularJS.",
+					"Developed rich client-side UIs using JavaScript, jQuery, and AngularJS.",
+					"Built a complex back end and RESTful APIs in Java.",
 					"Integrated all work with the Salesforce data platform."
 				]
 			},
