@@ -1,0 +1,42 @@
+{
+  "name": "jdd1260.github.io",
+  "description": "Personal website",
+  "version": "1.0.1",
+  "author": "Joel Detweiler <joeldetweiler@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-google-analytics": "^1.0.12",
+    "gatsby-plugin-google-fonts": "0.0.3",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.14",
+    "gatsby-plugin-sharp": "^1.6.21",
+    "gatsby-plugin-typography": "1.7.10",
+    "gatsby-remark-copy-linked-files": "^1.5.9",
+    "gatsby-remark-images": "^1.5.33",
+    "gatsby-source-filesystem": "^1.5.8",
+    "gatsby-transformer-remark": "^1.7.21",
+    "gatsby-transformer-sharp": "^1.6.14",
+    "global": "^4.3.2",
+    "react-icons": "2.2.7",
+    "react-slick": "0.16.0",
+    "slick-carousel": "1.8.1",
+    "typography-theme-bootstrap": "0.16.7"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.9.2"
+  }
+}
