@@ -7,7 +7,7 @@ import Header from '../components/Header'
 import About from '../components/about'
 import Resume from '../components/Resume'
 import Portfolio from '../components/portfolio'
-import Footer from '../components/Footer'
+import Footer from '../components/footer'
 
 const IndexPage = () => (
   <div>

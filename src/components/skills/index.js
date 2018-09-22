@@ -1,5 +1,5 @@
-import React from 'react'
-import { intro, skills } from './skills'
+import React from 'react';
+import { intro, skills } from './text';
 
 const Skills = () => (
   <div className="row skill">

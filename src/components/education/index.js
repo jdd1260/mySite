@@ -1,5 +1,5 @@
 import React from 'react'
-import schools from './schools'
+import schools from './text'
 
 const Education = () => (
   <div className="row education">

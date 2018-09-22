@@ -1,5 +1,5 @@
 import React from 'react'
-import jobs from './jobs'
+import jobs from './text'
 
 const Work = () => (
   <div className="row work">

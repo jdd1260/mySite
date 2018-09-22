@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialLinks from '../SocialLinks'
+import SocialLinks from '../social-links'
 import { bannerTitle, bannerText } from './text'
 
 const Banner = () => (
