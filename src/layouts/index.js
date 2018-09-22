@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { siteMetadata } from '../../gatsby-config'
 
+import { siteMetadata } from '../../gatsby-config'
+import GA from './ga'
 import favicon from '../assets/favicon.ico'
 
 const TemplateWrapper = ({ children }) => (
@@ -21,6 +22,11 @@ const TemplateWrapper = ({ children }) => (
       />
       <title>{siteMetadata.title}</title>
       <link rel="icon" href={favicon} type="image/x-icon" />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-87288968-1"
+      />
+      <script>{GA}</script>
     </Helmet>
     {children()}
   </div>
