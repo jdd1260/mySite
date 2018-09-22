@@ -26,7 +26,9 @@ const Education = () => (
               <div className="five columns text-right">{school.date}</div>
             </div>
             <ul className="bulleted">
-              {school.items.map((item, index) => <li key={index}>{item}</li>)}
+              {school.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
         </div>

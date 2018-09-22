@@ -25,7 +25,9 @@ const Work = () => (
               <div className="five columns text-right">{job.dates}</div>
             </div>
             <ul className="bulleted">
-              {job.items.map((item, index) => <li key={index}>{item}</li>)}
+              {job.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
         </div>
