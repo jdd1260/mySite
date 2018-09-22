@@ -3,6 +3,7 @@ import ChartingBaseball from '../../assets/images/charting-baseball.png'
 import QuickstartReact from '../../assets/images/quickstart-react.png'
 import GunViolence from '../../assets/images/gun-violence.png'
 import WARandaging from '../../assets/images/war-and-aging.png'
+import Winter from '../../assets/images/winter.jpg'
 
 const projects = [
   {
@@ -53,6 +54,13 @@ const projects = [
     text: 'A visualization of Baseball Player WAR by age.',
     link:
       'https://public.tableau.com/profile/joel.detweiler#!/vizhome/WARandaging/Dashboard1',
+  },
+  {
+    title: 'Personal Website',
+    image: Winter,
+    text: 'This website was built with React and intended for others to easily reuse.',
+    link:
+      'https://github.com/jdd1260/jdd1260.github.io',
   },
 ]
 
