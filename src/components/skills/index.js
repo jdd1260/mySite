@@ -1,15 +1,15 @@
-import React from 'react';
-import { intro, skills } from './text';
+import React from 'react'
+import { intro, skills } from './text'
 
 const Skills = () => (
   <div className="row skill">
-    <div className="three columns header-col">
+    <div className="two columns header-col">
       <h1>
         <span>Skills</span>
       </h1>
     </div>
 
-    <div className="nine columns main-col">
+    <div className="ten columns main-col">
       {intro}
 
       <div className="bars">

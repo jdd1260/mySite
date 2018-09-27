@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaCloudDownload } from 'react-icons/lib/fa'
 
 import { aboutMe, contact } from './text'
 
@@ -23,15 +22,13 @@ const About = () => (
               <div>{contact.email}</div>
             </p>
           </div>
-          {/*
-            <div className="columns download">
-              <p>
-                <a href="#" className="button">
-                  <FaCloudDownload /> Download Resume
-                </a>
-              </p>
-            </div>
-          */}
+          <div className="columns download">
+            <p>
+              <a href="/resume" className="button">
+                View Resume
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

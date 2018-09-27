@@ -3,13 +3,13 @@ import schools from './text'
 
 const Education = () => (
   <div className="row education">
-    <div className="three columns header-col">
+    <div className="two columns header-col">
       <h1>
         <span>Education</span>
       </h1>
     </div>
 
-    <div className="nine columns main-col">
+    <div className="ten columns main-col">
       {schools.map(school => (
         <div className="row item" key={school.name}>
           <div className="twelve columns">

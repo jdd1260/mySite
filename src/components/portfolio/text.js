@@ -58,9 +58,9 @@ const projects = [
   {
     title: 'Personal Website',
     image: Winter,
-    text: 'This website was built with React and intended for others to easily reuse.',
-    link:
-      'https://github.com/jdd1260/jdd1260.github.io',
+    text:
+      'This website was built with React and intended for others to easily reuse.',
+    link: 'https://github.com/jdd1260/jdd1260.github.io',
   },
 ]
 

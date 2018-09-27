@@ -12,7 +12,9 @@ const Footer = () => (
         <SocialLinks />
 
         <ul className="copyright">
-          <li>&copy; Copyright { text.copyrightYear } { text.copyrightName }</li>
+          <li>
+            &copy; Copyright {text.copyrightYear} {text.copyrightName}
+          </li>
           <li>
             Design by{' '}
             <a title="Styleshout" href="http://www.styleshout.com/">
@@ -21,7 +23,7 @@ const Footer = () => (
           </li>
           <li>
             Developed in React ⚛️ by{' '}
-            <a href="http://www.amanhimself.me">{ text.author }</a>
+            <a href="http://www.amanhimself.me">{text.author}</a>
           </li>
         </ul>
       </div>

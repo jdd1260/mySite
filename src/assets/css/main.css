@@ -1131,6 +1131,19 @@ ul#nav li.current a {
   margin-top: 6px;
 }
 
+#resume-header {
+  background-color: white;
+  padding-top: 20px;
+  color: black;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#resume-header .title {
+  font-size: 2.3em;
+  margin-bottom: 15px;
+}
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
