@@ -1,7 +1,7 @@
 const text = {
   name: 'Joel Detweiler',
   title: 'Full-Stack Software Engineer',
-  location: 'Washington, D.C.',
+  location: 'Tacoma, WA',
   website: 'https://jdd1260.github.io/',
 }
 

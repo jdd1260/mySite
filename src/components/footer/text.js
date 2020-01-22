@@ -1,6 +1,6 @@
 const text = {
   author: 'Joel Detweiler',
-  copyrightYear: 2018,
+  copyrightYear: 2020,
   copyrightName: 'Joel Detweiler',
 }
 

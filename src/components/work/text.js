@@ -7,8 +7,9 @@ const jobs = [
     items: [
       'Used React and Redux for front end development.',
       'Developed microservices for AWS Lambda using Typescript.',
+      'Built a real-time big data product using PostgreSQL',
       "Team's lead developer.",
-      'Managed 3-5 full-stack developers.',
+      'Managed 5 full-stack developers.',
     ],
   },
   {

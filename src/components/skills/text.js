@@ -4,20 +4,20 @@ export const skills = [
     value: 99,
   },
   {
+    name: 'PostgreSQL',
+    value: 95,
+  },
+  {
     name: 'REST APIs',
     value: 95,
   },
   {
     name: 'React',
-    value: 90,
+    value: 95,
   },
   {
-    name: 'Angular.JS',
-    value: 80,
-  },
-  {
-    name: 'PostgreSQL',
-    value: 80,
+    name: 'Managing Developers',
+    value: 85,
   },
   {
     name: 'MongoDB',
@@ -27,7 +27,6 @@ export const skills = [
     name: 'AWS',
     value: 75,
   },
-  ,
   {
     name: 'Java',
     value: 75,
@@ -41,10 +40,6 @@ export const skills = [
     value: 70,
   },
   {
-    name: 'Managing Developers',
-    value: 65,
-  },
-  {
     name: 'Tableau',
     value: 60,
   },
@@ -55,4 +50,4 @@ export const skills = [
 ]
 
 export const intro =
-  'My skills are focused around full-stack web development. That includes frontend and backend development, css, databases, and basic devops. I have experience working on new projects and small teams, as well as joining larger teams and projects'
+  'My skills are focused around full-stack web development. That includes front end and back end development, css, databases, and basic DevOps. I have experience working on new projects and small teams, as well as joining established teams and projects.'
