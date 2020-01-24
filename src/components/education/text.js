@@ -4,7 +4,9 @@ const schools = [
     location: 'Urbana, IL',
     degree: 'Master of Computer Science - Data Science',
     date: 'Expected May 2020',
-    items: [],
+    items: [
+      'GPA: 3.90'
+    ],
   },
   {
     name: 'Pomona College',

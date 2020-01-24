@@ -3,13 +3,13 @@ import { intro, skills } from './text'
 
 const Skills = () => (
   <div className="row skill">
-    <div className="two columns header-col">
+    <div className="resume-left columns header-col">
       <h1>
         <span>Skills</span>
       </h1>
     </div>
 
-    <div className="ten columns main-col">
+    <div className="resume-right columns main-col">
       {intro}
 
       <div className="bars">
