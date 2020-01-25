@@ -16,6 +16,7 @@ const schools = [
     items: [
       'Minor: Mathematics',
       'Thesis: Updatable Learning of Support Vector Machines',
+      '3 Years as a Computer Science T.A.'
     ],
   },
 ]

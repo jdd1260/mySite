@@ -16,12 +16,20 @@ export const skills = [
     value: 95,
   },
   {
+    name: 'Project Management',
+    value: 90,
+  },
+  {
     name: 'Managing Developers',
     value: 85,
   },
   {
     name: 'MongoDB',
     value: 80,
+  },
+  {
+    name: 'Machine Learning',
+    value: 75,
   },
   {
     name: 'AWS',
@@ -50,4 +58,4 @@ export const skills = [
 ]
 
 export const intro =
-  'My skills are focused around full-stack web development. That includes front end and back end development, css, databases, and basic DevOps. I have experience working on new projects and small teams, as well as joining established teams and projects.'
+  'My skills are focused around full-stack web development: front and back end development, databases, css, and basic DevOps. I am experienced as the lead developer on new projects, where I have coordinated efforts and made big technical decisions. I am a flexible developer and passionate about staying up to date on new technologies and frameworks, seeking always to keep projects performant and maintainable.'

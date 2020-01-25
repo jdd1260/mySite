@@ -5,9 +5,9 @@ const jobs = [
     dates: 'September 2017 - Present',
     title: 'Senior JavaScript Developer and Chapter Lead',
     items: [
-      'Used React and Redux for front end development.',
       'Developed microservices for AWS Lambda using Typescript.',
-      'Built a real-time big data product using PostgreSQL',
+      'Built a real-time big data product using PostgreSQL.',
+      'Used React and Redux for front end development.',
       "Team's lead developer.",
       'Managed 5 full-stack developers.',
     ],
@@ -42,7 +42,7 @@ const jobs = [
     title: 'Student Intern',
     items: [
       'Performed original Machine Learning research with applications to computer security.',
-      'Used Markov Chains and Hidden Markov Models to detect anomalies in network connection data.',
+      'Used Markov Chains and Hidden Markov Models for anomaly detection.',
     ],
   },
 ]
