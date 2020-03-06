@@ -1,8 +1,10 @@
 import React from 'react'
 
 import text from './text'
+import profilePic from '../../assets/images/profilepic.jpg'
 
-const Footer = () => (
+
+const Header = () => (
   <div id="resume-header">
     <div className="row">
       <div className="twelve columns text-center">
@@ -11,8 +13,11 @@ const Footer = () => (
         {text.location} <br />
         <a href={text.website}> {text.website} </a>
       </div>
+      <div className="profile">
+        <img className="profile-pic" src={profilePic} alt="Joel Detweiler" />
+      </div>
     </div>
   </div>
 )
 
-export default Footer
+export default Header

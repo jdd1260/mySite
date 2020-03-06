@@ -1,5 +1,5 @@
 export const aboutMe =
-  "I'm a California-raised software developer living in Tacoma, Washington. My interests include weight lifting, running, hiking, reading, dogs, politics, and baseball. I love to learn and start new projects. I'm passionate about my work as a software developer, and I enjoy helping others break into the field. I currently work at iFit, where we are building some awesome fitness technology."
+  "I'm a California-raised software developer now living in Tacoma, Washington. I take pride in my work, enjoy responsibilty, and like to help others succeed. I currently work at iFit, where we are building some awesome fitness technology. Outside of work, my interests include weightlifting, running, reading, baseball, and my two dogs.";
 
 export const contact = {
   name: 'Joel Detweiler',

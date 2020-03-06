@@ -8,7 +8,7 @@ import Resume from '../components/Resume'
 const IndexPage = () => (
   <div>
     <ResumeHeader />
-    <Resume />
+    <Resume showAbout={true} />
   </div>
 )
 

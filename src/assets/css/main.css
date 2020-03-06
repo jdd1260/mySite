@@ -590,7 +590,7 @@ input[type="checkbox"] { display: inline; }
 --------------------------------------------------------------- */
 .row {
    width: 96%;
-   max-width: 1020px;
+   max-width: 1200px;
    margin: 0 auto;
 }
 /* fixed width for IE8 */
@@ -1072,9 +1072,10 @@ ul#nav li.current a {
 
 #resume {
   background: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
   overflow: hidden;
+  line-height: 2;
 }
 
 #resume a,
@@ -1087,7 +1088,7 @@ ul#nav li.current a {
 }
 
 #resume h1 {
-  font: 1.25em "opensans-bold", sans-serif;
+  font: 1.5em "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1120,12 +1121,14 @@ ul#nav li.current a {
   padding-right: 10%;
 }
 
+.about,
 .education,
 .work,
 .skill {
   margin-bottom: 3em;
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #e8e8e8;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #2b2b2b8c;
 }
 #resume .info {
   color: #6e7881;
@@ -1140,6 +1143,14 @@ ul#nav li.current a {
   margin-top: .4em;
 }
 
+#resume .columns .row:last-child {
+  border: 0;
+}
+
+#resume .left-side {
+  padding-right: 35px;
+}
+
 #resume-header {
   background-color: white;
   padding-top: 1.33em;
@@ -1150,32 +1161,47 @@ ul#nav li.current a {
 
 #resume-header .title {
   font-size: 2.2em;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+}
+@media only screen and (max-width: 767px) {
+  #resume-header  .profile{
+   display: none;
+  }
+}
+
+#resume-header .profile{
+  position: absolute;
+  top: 1em;
+  width: 25%;
+  text-align: right;
+}
+#resume-header .profile-pic {
+  width: 8em;
+  border-radius: 50%;
+  border: 0.6em solid #11abb0;
 }
 
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.bars {
-  width: 95%;
-  float: left;
-  padding: 0;
-  text-align: left;
-}
 .bars .skills {
   margin-top: 1.5em;
   list-style: none;
 }
 .bars li {
   position: relative;
-  margin-bottom: 2em;
   background: #ccc;
-  height: 2em;
+  height: 1em;
   border-radius: 3px;
+  width: 47%;
+  display: inline-block;
+  margin-right: 3%;
+  margin-bottom: 1.5em;
+  
 }
 .bars li em {
-  font: 1em "opensans-bold", sans-serif;
+  font: 0.85em "opensans-bold", sans-serif;
   color: #313131;
   letter-spacing: 2px;
   font-weight: normal;
@@ -1190,9 +1216,9 @@ ul#nav li.current a {
 
   margin: 0;
   padding-right: 1.6em;
-  background: #313131;
+  background: #11abb0;
   display: inline-block;
-  height: 2em;
+  height: 1em;
   line-height: 2em;
   border-radius: 3px 0 0 3px;
    -moz-animation: illustrator 2s ease;
@@ -1204,23 +1230,6 @@ ul#nav li.current a {
     font-size: 13px;
     zoom: 90%;
     -webkit-print-color-adjust: exact !important;
-  }
-  #resume {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  #resume-header .title {
-    margin-bottom: .5em;
-  }
-  .work, .education, .skill {
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-  }
-  .bars li {
-    width: 47%;
-    display: inline-block;
-    margin-right: 3%;
-    margin-bottom: 1.5em;
   }
 }
 

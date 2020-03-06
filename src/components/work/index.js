@@ -3,12 +3,12 @@ import jobs from './text'
 
 const Work = () => (
   <div className="row work">
-    <div className="resume-left columns header-col">
+    <div className="">
       <h1>
         <span>Work</span>
       </h1>
     </div>
-    <div className="resume-right columns main-col">
+    <div className="">
       {jobs.map(job => (
         <div className="row item" key={job.company}>
           <div className="twelve columns">

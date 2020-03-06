@@ -8,19 +8,15 @@ export const skills = [
     value: 95,
   },
   {
-    name: 'REST APIs',
-    value: 95,
-  },
-  {
     name: 'React',
     value: 95,
   },
   {
-    name: 'Project Management',
-    value: 90,
+    name: 'REST APIs',
+    value: 95,
   },
   {
-    name: 'Managing Developers',
+    name: 'Management',
     value: 85,
   },
   {
@@ -28,11 +24,7 @@ export const skills = [
     value: 80,
   },
   {
-    name: 'Machine Learning',
-    value: 75,
-  },
-  {
-    name: 'AWS',
+    name: 'AI/ML',
     value: 75,
   },
   {
@@ -44,12 +36,12 @@ export const skills = [
     value: 75,
   },
   {
-    name: 'Sass',
-    value: 70,
+    name: 'AWS',
+    value: 75,
   },
   {
-    name: 'Tableau',
-    value: 60,
+    name: 'Sass',
+    value: 70,
   },
   {
     name: 'd3.js',
@@ -58,4 +50,4 @@ export const skills = [
 ]
 
 export const intro =
-  'My skills are focused around full-stack web development: front and back end development, databases, css, and basic DevOps. I am experienced as the lead developer on new projects, where I have coordinated efforts and made big technical decisions. I am a flexible developer and passionate about staying up to date on new technologies and frameworks, seeking always to keep projects performant and maintainable.'
+  'I am a well-rounded full-stack developer, comfortable with front and back end development, databases, css, and basic DevOps. I am experienced as the lead developer on new projects, where I have built high-performance products as well as internal tools and packages. I am flexible and enjoy staying up to date on new technologies and frameworks, with my goal to always keep projects performant and maintainable.'
